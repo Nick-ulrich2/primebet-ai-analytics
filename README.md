@@ -19,3 +19,4 @@ streamlit run app.py
 ```
 
 Mettre la clé Gemini dans `.env` : `GEMINI_API_KEY=...` (jamais commitée).
+# primebet-ai-analytics
