@@ -6,3 +6,6 @@ beautifulsoup4
 streamlit
 google-genai
 python-dotenv
+ipykernel
+matplotlib
+seaborn
