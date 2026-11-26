@@ -27,7 +27,10 @@
       "taux_churn_pct": 14.9,
       "produit_principal": "Paris Sportifs (Football)",
       "jeu_casino_cross_sell": "Live Roulette",
-      "paiement_prefere_top": "Mobile Wallet / USSD"
+      "paiement_prefere_top": "Mobile Wallet / USSD",
+      "risque_churn_moyen_pct": 39.5,
+      "joueurs_risque_critique": 510,
+      "part_risque_critique_pct": 11.7
     },
     "Parieurs Sportifs Volatils (À Fidéliser)": {
       "cluster_id": 1,
@@ -42,7 +45,10 @@
       "taux_churn_pct": 14.6,
       "produit_principal": "Paris Sportifs (Football)",
       "jeu_casino_cross_sell": "Aviator (Crash Game)",
-      "paiement_prefere_top": "Mobile Money"
+      "paiement_prefere_top": "Mobile Money",
+      "risque_churn_moyen_pct": 39.3,
+      "joueurs_risque_critique": 504,
+      "part_risque_critique_pct": 11.7
     },
     "VIP / High-Rollers à Sécuriser": {
       "cluster_id": 2,
@@ -57,7 +63,10 @@
       "taux_churn_pct": 16.1,
       "produit_principal": "Paris Sportifs (Football)",
       "jeu_casino_cross_sell": "Virtual Football",
-      "paiement_prefere_top": "Mobile Wallet / USSD"
+      "paiement_prefere_top": "Mobile Wallet / USSD",
+      "risque_churn_moyen_pct": 40.9,
+      "joueurs_risque_critique": 77,
+      "part_risque_critique_pct": 11.1
     },
     "Passionnés Casino & Crash Games": {
       "cluster_id": 3,
@@ -72,7 +81,21 @@
       "taux_churn_pct": 13.8,
       "produit_principal": "Table Games",
       "jeu_casino_cross_sell": "Table Games",
-      "paiement_prefere_top": "Mobile Wallet / USSD"
+      "paiement_prefere_top": "Mobile Wallet / USSD",
+      "risque_churn_moyen_pct": 38.7,
+      "joueurs_risque_critique": 87,
+      "part_risque_critique_pct": 9.2
     }
+  },
+  "_churn_metadata": {
+    "model": "HistGradientBoostingClassifier (balanced)",
+    "holdout_roc_auc": 0.7763,
+    "top_churn_drivers": [
+      "satisfaction_score",
+      "days_since_last_activity",
+      "payment_failures",
+      "primary_device",
+      "gaming_sessions_per_week"
+    ]
   }
 }

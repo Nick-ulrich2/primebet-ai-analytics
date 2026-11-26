@@ -1,0 +1,69 @@
+{
+  "dataset": {
+    "total_scored_players": 10300,
+    "unique_profiles_for_training": 7500,
+    "train_size": 6000,
+    "test_size": 1500
+  },
+  "metrics_holdout_unseen": {
+    "train_roc_auc": 0.879,
+    "test_roc_auc": 0.7763,
+    "precision_at_0_5": 0.3023,
+    "recall_at_0_5": 0.6606,
+    "f1_at_0_5": 0.4148
+  },
+  "holdout_risk_calibration": {
+    "Faible": {
+      "nb_joueurs_test": 816,
+      "taux_churn_reel_pct": 5.4
+    },
+    "Modéré": {
+      "nb_joueurs_test": 491,
+      "taux_churn_reel_pct": 19.1
+    },
+    "Critique": {
+      "nb_joueurs_test": 193,
+      "taux_churn_reel_pct": 43.0
+    }
+  },
+  "top_churn_drivers_auc_drop": {
+    "satisfaction_score": 0.0906,
+    "days_since_last_activity": 0.0755,
+    "payment_failures": 0.0403,
+    "primary_device": 0.0155,
+    "gaming_sessions_per_week": 0.0147,
+    "betting_win_rate": 0.0119,
+    "region": 0.0112,
+    "total_stake_eur": 0.0049
+  },
+  "risk_by_persona": {
+    "Parieurs Sportifs Fidèles": {
+      "nb_joueurs": 4353,
+      "risque_churn_moyen_pct": 39.5,
+      "joueurs_risque_critique": 510,
+      "part_risque_critique_pct": 11.7,
+      "joueurs_risque_modere": 1304
+    },
+    "Parieurs Sportifs Volatils (À Fidéliser)": {
+      "nb_joueurs": 4309,
+      "risque_churn_moyen_pct": 39.3,
+      "joueurs_risque_critique": 504,
+      "part_risque_critique_pct": 11.7,
+      "joueurs_risque_modere": 1329
+    },
+    "Passionnés Casino & Crash Games": {
+      "nb_joueurs": 944,
+      "risque_churn_moyen_pct": 38.7,
+      "joueurs_risque_critique": 87,
+      "part_risque_critique_pct": 9.2,
+      "joueurs_risque_modere": 296
+    },
+    "VIP / High-Rollers à Sécuriser": {
+      "nb_joueurs": 694,
+      "risque_churn_moyen_pct": 40.9,
+      "joueurs_risque_critique": 77,
+      "part_risque_critique_pct": 11.1,
+      "joueurs_risque_modere": 239
+    }
+  }
+}
